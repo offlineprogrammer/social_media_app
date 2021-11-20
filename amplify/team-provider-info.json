@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-socialmediaapp-staging-145537-authRole",
+      "UnauthRoleArn": "arn:aws:iam::279012124572:role/amplify-socialmediaapp-staging-145537-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::279012124572:role/amplify-socialmediaapp-staging-145537-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-socialmediaapp-staging-145537-deployment",
+      "UnauthRoleName": "amplify-socialmediaapp-staging-145537-unauthRole",
+      "StackName": "amplify-socialmediaapp-staging-145537",
+      "StackId": "arn:aws:cloudformation:us-east-1:279012124572:stack/amplify-socialmediaapp-staging-145537/45d1c8c0-3d7f-11ec-8016-127e2c9f2829",
+      "AmplifyAppId": "d3azu1iatnqa9e"
+    },
+    "categories": {
+      "auth": {
+        "socialmediaapp": {}
+      }
+    }
+  }
+}

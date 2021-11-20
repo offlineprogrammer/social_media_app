@@ -1,0 +1,26 @@
+type Comment @model @auth(rules: [{allow: public}]) @key(name: "byPost", fields: ["postID"]) {
+  id: ID!
+  content: String
+  createdAt: String
+  postID: ID
+}
+
+type Post @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  content: String
+  postImageUrl: String
+  createdAt: String
+  likes: Int
+  userID: ID
+  Comments: [Comment] @connection(keyName: "byPost", fields: ["id"])
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String!
+  email: AWSEmail
+  displayname: String
+  isVerified: Boolean!
+  createdAt: AWSDateTime!
+  Posts: [Post] @connection(keyName: "byUser", fields: ["id"])
+}
